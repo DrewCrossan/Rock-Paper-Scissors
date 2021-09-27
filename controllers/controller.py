@@ -14,31 +14,33 @@ def index():
 
 def play(player1, player2):
 
-    player_one = Player("Player_1", player1)
-    player_two = Player("Player_2", player2)
+    # player_one = Player("Player_1", player1)
+    # player_two = Player("Player_2", player2)
 
-    play(player_one, player_two)
+    # result = play(player_one, player_two)
 
-    # if player1 == "Rock" and player2 == "Scissors":
-    #     return f"Player1 is the winner by playing {player1}"
+    # print(result)
 
-    # if player1 == "Scissors" and player2 == "Paper":
-    #     return f"Player1 is the winner by playing {player1}"
+    if player1 == "Rock" and player2 == "Scissors":
+        return f"Player1 is the winner by playing {player1}"
 
-    # if player1 == "Paper" and player2 == "Rock":
-    #     return f"Player1 is the winner by playing {player1}"
+    if player1 == "Scissors" and player2 == "Paper":
+        return f"Player1 is the winner by playing {player1}"
 
-    # if player1 == "Rock" and player2 == "Paper":
-    #     return f"Player2 is the winner by playing {player2}"
+    if player1 == "Paper" and player2 == "Rock":
+        return f"Player1 is the winner by playing {player1}"
 
-    # if player1 == "Scissors" and player2 == "Rock":
-    #     return f"Player2 is the winner by playing  {player2}"
+    if player1 == "Rock" and player2 == "Paper":
+        return f"Player2 is the winner by playing {player2}"
 
-    # if player1 == "Paper" and player2 == "Scissors":
-    #     return f"Player2 is the winner by playing {player2}"
+    if player1 == "Scissors" and player2 == "Rock":
+        return f"Player2 is the winner by playing  {player2}"
 
-    # if player1 == player2:
-    #     return "It was a draw"
+    if player1 == "Paper" and player2 == "Scissors":
+        return f"Player2 is the winner by playing {player2}"
+
+    if player1 == player2:
+        return "It was a draw"
         # return None <--crashes
     # return render_template("/game/results.html")
 
