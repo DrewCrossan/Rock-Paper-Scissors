@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Rock, Paper, Scissors Game</h1>
+
+<u><h2>RULES:</h2></u>
+<p>Player 1 enters their move in the url bar first (e.g. game/Rock)</p><br>
+<p>Player 2 enters their move in the url bar after Player 1 (e.g. game/Rock/Paper)</p><br>
+<p>Press the enter key to see who wins.</p>
+
+
+{% for player in players %}
+<p>Name: {{ player.name }}</p>
+<p>Choice: {{ player.choice }}</p>
+<hr>
+{% endfor %}
+<!-- <h1>Rock, Paper, Scissors Game2</h1> -->
+
+
+
+
+
+{% endblock %}

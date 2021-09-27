@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/game" method="post">
+    <label for="name1">Player 1: </label>
+    <input id="name1" name="name1" type="text">
+    <label for="choice1">Rock, Paper or Scissors?</label>
+    <select name="choice1" id="choice1" multiple>
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+      </select><br>
+    <!-- <input id="choice1" name="choice1" type="text"><br> -->
+    <label for="name2">Player 2: </label>
+    <input id="name2" name="name2" type="text">
+    <label for="choice2">Rock, Paper or Scissors?</label>
+    <select name="choice2" id="choice2" multiple>
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+      </select>
+    <!-- <input id="choice2" name="choice2" type="text"> -->
+    <input type="submit" value="Add Game">
+</form>
+
+
+{% endblock %}
+
+
+<!-- <label for="cars">Choose a car:</label>
+
+<select name="choice1" id="choice1" multiple>
+  <option value="Rock">Rock</option>
+  <option value="Paper">Paper</option>
+  <option value="Scissors">Scissors</option>
+</select> -->
